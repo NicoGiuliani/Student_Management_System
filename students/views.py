@@ -12,7 +12,7 @@ def index(request):
     })
 
 def view_student(request, id):
-    student = Students.objects.get(pk=id)
+    student = Student.objects.get(pk=id)
     return HttpResponseRedirect(reverse('index'))
 
 def add(request):
